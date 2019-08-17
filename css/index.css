@@ -136,6 +136,41 @@ footer {
     text-transform: uppercase;
 }
 
+/* ABOUT */
+#about {
+    background-color: #353535;
+    padding: 50px;
+}
+
+.about-content-box {
+    text-align: center;
+    padding: 50px 20px;
+    width: 45%;
+    margin: 0 auto 50px auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,2);
+}
+
+.mp3-title {
+    font-size: 15px;
+    font-weight: light;
+    color: black;
+    padding: 10px 0;
+}
+
+.mp3 {
+    width: 90%;
+}
+
+.mp4 {
+    width: 90%;
+}
+
+iframe {
+    width: 90%;
+}
+
 /* Media */
 @media screen and (max-width: 1560px) {
     #biography-photo-box {
