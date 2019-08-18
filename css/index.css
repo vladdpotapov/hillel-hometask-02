@@ -171,6 +171,34 @@ iframe {
     width: 90%;
 }
 
+/* Gallery */
+#gallery {
+    background-color: #353535;
+    padding: 50px 0;
+}
+
+#gallery-content-box {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,2);
+}
+
+.gallery-content-item {
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,2);
+}
+
+.gallery-content-item-link:hover {
+    opacity: 0.8;
+}
+
 /* Media */
 @media screen and (max-width: 1560px) {
     #biography-photo-box {
@@ -179,6 +207,20 @@ iframe {
     }
     .biography-photo-item {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    #gallery-content-box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .about-content-box {
+        width: 90%;
+        margin: 50px auto;
     }
 }
 
@@ -201,6 +243,12 @@ iframe {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .gallery-content-item-poster {
+        width: 300px;
+    }
+}
+
 @media screen and (max-width: 425px) {
    #header-navbar-menu {
        display: flex;
@@ -210,4 +258,10 @@ iframe {
    .header-navbar-menu-item {
        margin-bottom: 20px;
    }
+}
+
+@media screen and (max-width: 370px) {
+    .gallery-content-item-poster {
+        width: 250px;
+    }
 }
